@@ -14,7 +14,7 @@ $("document").ready(function (){
             return;
         }
         try{
-            let url = `http://api.openweathermap.org/data/2.5/weather?zip=${zip},us&appid=${apiKey}&units=imperial`;
+            let url = `https://api.openweathermap.org/data/2.5/weather?zip=${zip},us&appid=${apiKey}&units=imperial`;
             let response = await fetch(url);
             let data = await response.json();
             
@@ -25,7 +25,7 @@ $("document").ready(function (){
             
             $("#temp").text(`Tempurature: ${data.main.temp} F`);
             $("#weather").text(`Weather: ${data.weather[0].description}`);
-            $("#icon").attr("src",`http://openweathermap.org/img/wn/${data.weather[0].icon}.png`)
+            $("#icon").attr("src",`https://openweathermap.org/img/wn/${data.weather[0].icon}.png`)
             $("#icon").show();
 
         }catch(err){
