@@ -3,7 +3,6 @@ footer, body {
 }
 
 #errorZip, #errorApi {
-    visibility: hidden;
     background-color: red;
     color: white;
     font-size: 2.5em;
@@ -24,8 +23,4 @@ input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
     -webkit-appearance: none;
     margin: 0;
-}
-
-#temp, #weather, #icon {
-    visibility: hidden;
 }
